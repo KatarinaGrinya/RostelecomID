@@ -9,4 +9,4 @@
 
 В корне проекта в файле conftest.py находится фикстура с функцией открытия и закрытия браузера. Для запуска тестов необходимо поменять путь до webdriver на Ваш.
 Тесты находятся в корне проекта в файлах test_main_page.py, test_password_recovery_page.py, test_recovery_page.py, test_registration_page.py
-В файлах с тестами находятся команды для запуска тестов из командной строки (# -m pytest -v --(your_driver) --driver-path <your_driver_directory>/your_driver.exe test_name.py)
+
