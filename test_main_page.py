@@ -35,7 +35,7 @@ class TestBodyFromMainPage():
         main_page.open()
         main_page.field_must_be_correctness_phone_and_password()
 
-        # pytest -v --tb=line -m test_main_page.py
+    # -m pytest -v --(your_driver) --driver-path <your_driver_directory>/your_driver.exe test_main_page.py
 
     def test_must_be_correctness_number_of_characters(browser):
         main_page = MainPage(browser, url_main_page)
