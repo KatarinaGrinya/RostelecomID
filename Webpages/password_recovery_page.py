@@ -43,7 +43,7 @@ class PasswordRecoveryPageLocators():
         result = input_password_new.text, input_password_confirm.text
         assert result == "Пароль должен содержать хотя бы одну заглавную букву"
 
-    def smust_be_button_save(self):
+    def must_be_button_save(self):
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         self.browser.current_url = result
