@@ -21,10 +21,10 @@ class RegistrationPageLocators():
         result = input_first_name.text
         assert result == "Необходимо заполнить поле кириллицей. От 2 до 30 символов"
 
-    def field_first_surname_must_be_correctness(self):
-        input_first_name = self.find_element(RegistrationPageLocators.INPUT_FIRST_NAME)
-        input_first_name.clear()
-        input_first_name.send_keys('Grinya')
+    def field_last_name_must_be_correctness(self):
+        input_last_name = self.find_element(RegistrationPageLocators.INPUT_LAST_NAME)
+        input_last_name.clear()
+        input_last_name.send_keys('Grinya')
         button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_register.click()
         result = input_first_name.text
@@ -54,7 +54,7 @@ class RegistrationPageLocators():
         result = input_address.number
         assert result == "Сообщение введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
 
-    def should_be_password_field_correctness(self):
+    def must_be_password_field_correctness(self):
        input_password = self.find_element(RegistrationPageLocator.INPUT_PASSWORD)
        input_password.clear()
        input_password.send_keys('13579')
