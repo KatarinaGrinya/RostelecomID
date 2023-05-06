@@ -64,7 +64,7 @@ class BasePage():
         result = product_slogan.text
         assert result == "Личный кабинет"
 
-    def tab_click_telefon_must_be(self):
+    def tab_click_phone_must_be(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
         tab.click()
         result = tab.text
