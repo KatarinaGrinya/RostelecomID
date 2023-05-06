@@ -11,6 +11,7 @@ def test_must_be_form_autorization(browser):
     main_page.open()
     main_page.form_autorization_must_be()
 
+    
 @pytest.mark.main_page
 class TestBodyFromMainPage():
     def test_must_be_product_slogan(self, browser):
